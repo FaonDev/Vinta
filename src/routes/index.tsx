@@ -1,7 +1,9 @@
-import { GlobalStyles } from '../render'
-import { DiAtom } from 'react-icons/di';
+import Renderer, { GlobalStyles } from '../renderer'
+import { Request, Response } from 'express'
+import { DiAtom } from 'react-icons/di'
 
-export default function () {
+'client-side'
+function MyComponent() {
     return (
         <center>
             <style>{GlobalStyles()}</style>
@@ -11,4 +13,9 @@ export default function () {
             <p>Start editing at<a href='https://github.com'>src/components/index.tsx</a></p>
         </center>
     )
+}
+
+'server-side'
+export function GET(req: Request, res: Response) {
+    return res.send(Renderer(MyComponent))
 }
