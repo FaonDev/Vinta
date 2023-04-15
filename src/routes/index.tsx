@@ -10,7 +10,7 @@ function MyComponent() {
 
             <img src='/vinta.gif' />
             <h2><DiAtom />Welcome to<span>Vinta.js</span></h2>
-            <p>Start editing at<a href='https://github.com'>src/components/index.tsx</a></p>
+            <p>Start editing at<a href='https://github.com/FaonDev/Vinta/blob/master/src/routes/index.tsx'>src/routes/index.tsx</a></p>
         </center>
     )
 }
